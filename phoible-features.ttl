@@ -1,0 +1,780 @@
+@prefix : <https://phoible.org/features/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gold: <http://purl.org/linguistics/gold/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://phoible.org/features> .
+
+<https://phoible.org/features> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_advanced_tongue_root_property
+:phoible_advanced_tongue_root_property rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty dcterms:title ;
+                                                                                    owl:hasValue "advanced tongue root"@en
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty rdfs:label ;
+                                                                                    owl:hasValue "advanced tongue root"@en
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty skos:prefLabel ;
+                                                                                    owl:hasValue "advanced tongue root"@en
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_anterior_property
+:phoible_anterior_property rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty dcterms:title ;
+                                                                        owl:hasValue "anterior"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty rdfs:label ;
+                                                                        owl:hasValue "anterior"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:prefLabel ;
+                                                                        owl:hasValue "anterior"@en
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_approximant_property
+:phoible_approximant_property rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:title ;
+                                                                           owl:hasValue "approximant"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty rdfs:label ;
+                                                                           owl:hasValue "approximant"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty skos:prefLabel ;
+                                                                           owl:hasValue "approximant"@en
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_back_property
+:phoible_back_property rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty dcterms:title ;
+                                                                    owl:hasValue "back"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty rdfs:label ;
+                                                                    owl:hasValue "back"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty skos:prefLabel ;
+                                                                    owl:hasValue "back"@en
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_click_property
+:phoible_click_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "click"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "click"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "click"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_consonantal_property
+:phoible_consonantal_property rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:title ;
+                                                                           owl:hasValue "consonantal"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty rdfs:label ;
+                                                                           owl:hasValue "consonantal"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty skos:prefLabel ;
+                                                                           owl:hasValue "consonantal"@en
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_constricted_glottis_property
+:phoible_constricted_glottis_property rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty dcterms:title ;
+                                                                                   owl:hasValue "constricted glottis"@en
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty rdfs:label ;
+                                                                                   owl:hasValue "constricted glottis"@en
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty skos:prefLabel ;
+                                                                                   owl:hasValue "constricted glottis"@en
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_continuant_property
+:phoible_continuant_property rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty dcterms:title ;
+                                                                          owl:hasValue "continuant"@en
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty rdfs:label ;
+                                                                          owl:hasValue "continuant"@en
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty skos:prefLabel ;
+                                                                          owl:hasValue "continuant"@en
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_coronal_property
+:phoible_coronal_property rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dcterms:title ;
+                                                                       owl:hasValue "coronal"@en
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty rdfs:label ;
+                                                                       owl:hasValue "coronal"@en
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty skos:prefLabel ;
+                                                                       owl:hasValue "coronal"@en
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_delayed_release_property
+:phoible_delayed_release_property rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty dcterms:title ;
+                                                                               owl:hasValue "delayed release"@en
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty rdfs:label ;
+                                                                               owl:hasValue "delayed release"@en
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty skos:prefLabel ;
+                                                                               owl:hasValue "delayed release"@en
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_distributed_property
+:phoible_distributed_property rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:title ;
+                                                                           owl:hasValue "distributed"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty rdfs:label ;
+                                                                           owl:hasValue "distributed"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty skos:prefLabel ;
+                                                                           owl:hasValue "distributed"@en
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_dorsal_property
+:phoible_dorsal_property rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty dcterms:title ;
+                                                                      owl:hasValue "dorsal"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty rdfs:label ;
+                                                                      owl:hasValue "dorsal"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty skos:prefLabel ;
+                                                                      owl:hasValue "dorsal"@en
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_epilaryngeal_source_property
+:phoible_epilaryngeal_source_property rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty dcterms:title ;
+                                                                                   owl:hasValue "epilaryngeal source"@en
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty rdfs:label ;
+                                                                                   owl:hasValue "epilaryngeal source"@en
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty skos:prefLabel ;
+                                                                                   owl:hasValue "epilaryngeal source"@en
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_fortis_property
+:phoible_fortis_property rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty dcterms:title ;
+                                                                      owl:hasValue "fortis"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty rdfs:label ;
+                                                                      owl:hasValue "fortis"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty skos:prefLabel ;
+                                                                      owl:hasValue "fortis"@en
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_front_property
+:phoible_front_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "front"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "front"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "front"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_high_property
+:phoible_high_property rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty dcterms:title ;
+                                                                    owl:hasValue "high"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty rdfs:label ;
+                                                                    owl:hasValue "high"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty skos:prefLabel ;
+                                                                    owl:hasValue "high"@en
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_labial_property
+:phoible_labial_property rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty dcterms:title ;
+                                                                      owl:hasValue "labial"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty rdfs:label ;
+                                                                      owl:hasValue "labial"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty skos:prefLabel ;
+                                                                      owl:hasValue "labial"@en
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_labiodental_property
+:phoible_labiodental_property rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:title ;
+                                                                           owl:hasValue "labiodental"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty rdfs:label ;
+                                                                           owl:hasValue "labiodental"@en
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty skos:prefLabel ;
+                                                                           owl:hasValue "labiodental"@en
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_lateral_property
+:phoible_lateral_property rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dcterms:title ;
+                                                                       owl:hasValue "lateral"@en
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty rdfs:label ;
+                                                                       owl:hasValue "lateral"@en
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty skos:prefLabel ;
+                                                                       owl:hasValue "lateral"@en
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_long_property
+:phoible_long_property rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty dcterms:title ;
+                                                                    owl:hasValue "long"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty rdfs:label ;
+                                                                    owl:hasValue "long"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty skos:prefLabel ;
+                                                                    owl:hasValue "long"@en
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_low_property
+:phoible_low_property rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty dcterms:title ;
+                                                                   owl:hasValue "low"@en
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty rdfs:label ;
+                                                                   owl:hasValue "low"@en
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty skos:prefLabel ;
+                                                                   owl:hasValue "low"@en
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_lowered_larynx_implosive_property
+:phoible_lowered_larynx_implosive_property rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty dcterms:title ;
+                                                                                        owl:hasValue "lowered larynx implosive"@en
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty rdfs:label ;
+                                                                                        owl:hasValue "lowered larynx implosive"@en
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty skos:prefLabel ;
+                                                                                        owl:hasValue "lowered larynx implosive"@en
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_nasal_property
+:phoible_nasal_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "nasal"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "nasal"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "nasal"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_periodic_glottal_source_property
+:phoible_periodic_glottal_source_property rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty dcterms:title ;
+                                                                                       owl:hasValue "periodic glottal source"@en
+                                                                                     ]
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty rdfs:label ;
+                                                                                       owl:hasValue "periodic glottal source"@en
+                                                                                     ]
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty skos:prefLabel ;
+                                                                                       owl:hasValue "periodic glottal source"@en
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_raised_larynx_ejective_property
+:phoible_raised_larynx_ejective_property rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty dcterms:title ;
+                                                                                      owl:hasValue "raised larynx ejective"@en
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty rdfs:label ;
+                                                                                      owl:hasValue "raised larynx ejective"@en
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty skos:prefLabel ;
+                                                                                      owl:hasValue "raised larynx ejective"@en
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_retracted_tongue_root_property
+:phoible_retracted_tongue_root_property rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty dcterms:title ;
+                                                                                     owl:hasValue "retracted tongue root"@en
+                                                                                   ]
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty rdfs:label ;
+                                                                                     owl:hasValue "retracted tongue root"@en
+                                                                                   ]
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty skos:prefLabel ;
+                                                                                     owl:hasValue "retracted tongue root"@en
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_round_property
+:phoible_round_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "round"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "round"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "round"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_short_property
+:phoible_short_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "short"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "short"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "short"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_sonorant_property
+:phoible_sonorant_property rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty dcterms:title ;
+                                                                        owl:hasValue "sonorant"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty rdfs:label ;
+                                                                        owl:hasValue "sonorant"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:prefLabel ;
+                                                                        owl:hasValue "sonorant"@en
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_spread_glottis_property
+:phoible_spread_glottis_property rdf:type owl:Class ;
+                                 owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty dcterms:title ;
+                                                                              owl:hasValue "spread glottis"@en
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty rdfs:label ;
+                                                                              owl:hasValue "spread glottis"@en
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty skos:prefLabel ;
+                                                                              owl:hasValue "spread glottis"@en
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_stress_property
+:phoible_stress_property rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty dcterms:title ;
+                                                                      owl:hasValue "stress"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty rdfs:label ;
+                                                                      owl:hasValue "stress"@en
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty skos:prefLabel ;
+                                                                      owl:hasValue "stress"@en
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_strident_property
+:phoible_strident_property rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty dcterms:title ;
+                                                                        owl:hasValue "strident"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty rdfs:label ;
+                                                                        owl:hasValue "strident"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:prefLabel ;
+                                                                        owl:hasValue "strident"@en
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_syllabic_property
+:phoible_syllabic_property rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty dcterms:title ;
+                                                                        owl:hasValue "syllabic"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty rdfs:label ;
+                                                                        owl:hasValue "syllabic"@en
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:prefLabel ;
+                                                                        owl:hasValue "syllabic"@en
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_tap_property
+:phoible_tap_property rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty dcterms:title ;
+                                                                   owl:hasValue "tap"@en
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty rdfs:label ;
+                                                                   owl:hasValue "tap"@en
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty skos:prefLabel ;
+                                                                   owl:hasValue "tap"@en
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_tense_property
+:phoible_tense_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "tense"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "tense"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "tense"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_tone_property
+:phoible_tone_property rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty dcterms:title ;
+                                                                    owl:hasValue "tone"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty rdfs:label ;
+                                                                    owl:hasValue "tone"@en
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty skos:prefLabel ;
+                                                                    owl:hasValue "tone"@en
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://data.linguistik.de/bll/bll-phoible-link#phoible_trill_property
+:phoible_trill_property rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gold:PhoneticProperty
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty dcterms:title ;
+                                                                     owl:hasValue "trill"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty rdfs:label ;
+                                                                     owl:hasValue "trill"@en
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty skos:prefLabel ;
+                                                                     owl:hasValue "trill"@en
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://purl.org/linguistics/gold/PhoneticProperty
+gold:PhoneticProperty rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi
